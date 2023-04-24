@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta class="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI-CALC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+
+          <div class="lhs">
+            
+
+               <p>Total Amount :
+               <input type="text"   id="Total_Amount" >
+              </p>
+
+               <p>Intrest Rate :
+               <input type="number" min="0"  id="Intrest_Rate">
+               </p>
+
+               <p> Total Months :
+               <input type="number" min="0" id="Total_Months"> 
+               </p>
+
+
+               <!-- <button class="btn" onclick="lhs_validation(); table_validation() ">submit</button> -->
+               <button class="btn" onclick=" validate()">submit</button>
+
+
+          </div>
+
+
+
+          <div class="rhs">
+            <h2>Loan Info : </h2>
+                 <p class="para1"></p>
+                 <p class="para2"></p>
+                 <p class="para3"></p>
+          </div>
+
+
+
+     </div>
+
+
+            
+
+       <div id="scrollable">
+
+
+          <div class="tablediv">
+
+                  <table id="holetable" cellpadding='14px'>
+
+                    <tr>
+                        <th  width="50px">Months</th>
+                        <!-- <th >Begining Loan Balance</th> -->
+                        <th  width="200px">Monthly Payable EMI</th>
+                        <th  width="100px">Principal (INR)</th>
+                        <th  width="100px">Monthly Interest</th>
+                        <th  width="200px" >Balance to be Paid (INR)</th>
+                    </tr>
+
+                    </table>
+
+          </div>
+
+          
+          
+          <div id="table">
+                 
+                
+          </div>
+
+          
+        </div>
+
+
+
+
+       
+    <script src="style1.js"></script>
+</body>
+</html>
